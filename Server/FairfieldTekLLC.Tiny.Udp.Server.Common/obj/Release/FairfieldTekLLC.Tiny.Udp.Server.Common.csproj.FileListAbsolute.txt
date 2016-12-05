@@ -2,3 +2,4 @@ E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Serve
 E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\bin\Release\FairfieldTekLLC.Tiny.Udp.Server.Common.pdb
 E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\obj\Release\FairfieldTekLLC.Tiny.Udp.Server.Common.dll
 E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\obj\Release\FairfieldTekLLC.Tiny.Udp.Server.Common.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\obj\Release\FairfieldTekLLC.Tiny.Udp.Server.Common.csprojResolveAssemblyReference.cache

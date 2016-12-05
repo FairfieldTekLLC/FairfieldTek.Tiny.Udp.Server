@@ -26,7 +26,6 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
@@ -92,6 +91,49 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.Common.Client
         //To reduce garbage collection, using readonly vars
         private readonly PingPong _pingPong = new PingPong();
 
+
+        private void Recv(IAsyncResult res)
+        {
+            try
+            {
+
+
+                byte[] data = _client.EndReceive(res, ref _endPoint);
+
+                //Process codes
+
+                //Is this the first response?
+                if (!_setConnected)
+                {
+                    _setConnected = true;
+                    OnConnect();
+                }
+
+                //Did the server send us a pingpong?
+                if (data[0] == 0)
+                {
+                    _stringProcessor.SetData(data);
+                    _pingPong.Unpack(_stringProcessor);
+                    Send(_pingPong);
+                }
+                else
+                {
+                    new Thread(() => NewData(data)).Start();
+                }
+
+
+                _client.BeginReceive(Recv, null);
+            }
+            catch (Exception)
+            {
+                _isConnected = false;
+                _setConnected = false;
+
+            }
+        }
+
+        bool _setConnected;
+
         /// <summary>
         /// Worker which does the actual listening.
         /// </summary>
@@ -99,7 +141,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.Common.Client
         /// <param name="e"></param>
         private void BwListener_DoWork(object sender, DoWorkEventArgs e)
         {
-            
+
             int countCheck = 0;
             int lPort = _port;
 
@@ -109,10 +151,10 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.Common.Client
                 try
                 {
                     _endPoint = new IPEndPoint(IPAddress.Any, lPort);
-                    _client = new UdpClient(_endPoint) {EnableBroadcast = false};
+                    _client = new UdpClient(_endPoint) { EnableBroadcast = false };
                     break;
                 }
-                catch (System.Net.Sockets.SocketException ex)
+                catch (SocketException ex)
                 {
                     if (ex.SocketErrorCode != SocketError.AddressAlreadyInUse)
                         continue;
@@ -122,43 +164,30 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.Common.Client
             }
 
             _client.Connect(_host, _port);
-            bool setConnected = false;
+            _setConnected = false;
             _isConnected = true;
-            while (_isConnected)
+
+            _client.BeginReceive(Recv, null);
+
+
+        topGoto:
+            try
             {
-                try
-                {
-                    //If first time connecting, set a ping to get
-                    //the servers attention.
-                    if (!setConnected)
-                        Send(_pingPong);
+                //If first time connecting, set a ping to get
+                //the servers attention.
+                if (!_setConnected)
+                    Send(_pingPong);
+                Thread.Sleep(1000);
+                if (_isConnected)
+                    goto topGoto;
 
-                    //Listen for data
-                    var data = _client.Receive(ref _endPoint);
-
-                    //Is this the first response?
-                    if (!setConnected)
-                    {
-                        setConnected = true;
-                        OnConnect();
-                    }
-
-                    //Did the server send us a pingpong?
-                    if (data[0] == 0)
-                    {
-                        _stringProcessor.SetData(data);
-                        _pingPong.Unpack(_stringProcessor);
-                        Send(_pingPong);
-                    }
-                    else
-                        NewData(data);
-
-                }
-                catch (Exception)
-                {
-                    _isConnected = false;
-                }
             }
+            catch (Exception)
+            {
+                _isConnected = false;
+            }
+
+
             try
             {
                 _client.Close();

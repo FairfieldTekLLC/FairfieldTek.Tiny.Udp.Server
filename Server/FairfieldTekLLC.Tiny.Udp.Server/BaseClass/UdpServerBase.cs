@@ -207,15 +207,14 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
 
             _serverUdpListener = new UdpListener(_port);
 
+            //Start the connection monitoring thread.
+            BackgroundWorker bgwClientMonitor = new BackgroundWorker();
+            bgwClientMonitor.DoWork += ClientMonitor;
+            bgwClientMonitor.RunWorkerAsync();
+
             Task.Factory.StartNew(async () =>
             {
-                //Start the connection monitoring thread.
-                BackgroundWorker bgwClientMonitor = new BackgroundWorker();
-                bgwClientMonitor.DoWork += ClientMonitor;
-                bgwClientMonitor.RunWorkerAsync();
-
-                //Loop while running.
-                while (Run)
+            while(true)
                 {
                     ReceivedData received;
                     try
@@ -225,27 +224,17 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
                     catch (Exception er)
                     {
                         LogMessage("Error:" + er.Message);
-                        continue;
+                        break;
                     }
 
                     //Add new connection
                     lock (_connectedClients)
-                    {
                         if (!_connectedClients.ContainsKey(received.Sender))
-                        {
-
                             AddClient(CreateNewConnection(received.Sender, this));
-                            
-                        }
-                    }
 
                     //Process new packet.
                     lock (_connectedClients)
-                    {
-                        NewPacket(_connectedClients[received.Sender], received.Data);
-
-                        //  new Thread(() => NewPacket(_connectedClients[received.Sender], received.Data)).Start();
-                    }
+                        new Thread(() => NewPacket(_connectedClients[received.Sender], received.Data)).Start();
                 }
             });
             OnAfterServerStart();
@@ -317,13 +306,15 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <param name="e"></param>
         private void ClientMonitor(object sender, DoWorkEventArgs e)
         {
-            while (Run)
+            LoopTop:
             {
                 Parallel.ForEach(ConnectedClients, client => client.SendPing());
                 Thread.Sleep(_pingInterval);
                 Parallel.ForEach(ConnectedClients.Where(client => !client.GotPong && client.PingTime != null), MarkClientMissed);
                 Parallel.ForEach(ConnectedClients.Where(client => client.GotPong && client.PingTime != null), MarkClientHit);
                 Parallel.ForEach(ConnectedClients.Where(client => client.NumberOfMissedPongs > 10), RemoveClient);
+                if (Run)
+                    goto LoopTop;
             }
         }
 

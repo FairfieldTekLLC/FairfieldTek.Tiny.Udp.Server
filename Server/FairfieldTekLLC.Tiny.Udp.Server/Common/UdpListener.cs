@@ -56,8 +56,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.Common
         /// <param name="endpoint"></param>
         public UdpListener(IPEndPoint endpoint)
         {
-            Client = new UdpClient(endpoint);
-            Client.EnableBroadcast = false;
+            Client = new UdpClient(endpoint) {EnableBroadcast = false};
 
         }
 

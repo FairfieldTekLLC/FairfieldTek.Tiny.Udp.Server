@@ -106,9 +106,9 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <param name="e"></param>
         private void _worker_DoWork(object sender, DoWorkEventArgs e)
         {
-
-            while (Server.Run)
+            while (true)
             {
+
                 if (_queue.TryDequeue(out _data))
                 {
                     _processor.SetData(_data.Value);
@@ -119,6 +119,8 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
                 {
                     Thread.Sleep(CheckDelayMs);
                 }
+                if(!Server.Run)
+                    break;
             }
         }
 
