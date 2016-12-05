@@ -1,2 +1,5 @@
 # FairfieldTek.Tiny.Udp.Server
-Implementation of a UDP Server
+
+This project implements a fully functional Udp Sockets Server.
+
+## License ##

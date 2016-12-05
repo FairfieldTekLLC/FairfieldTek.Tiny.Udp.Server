@@ -1,0 +1,1 @@
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Client.Mono\bin\Debug\MonoClient.exe.config
