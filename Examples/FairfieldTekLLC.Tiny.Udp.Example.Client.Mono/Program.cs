@@ -33,7 +33,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Client.Mono
         private static void Main()
         {
             UdpClientTest test = new UdpClientTest();
-            test.Connect("192.168.211.34", 30000);
+            test.Connect("localhost", 30000);
             Console.Read();
         }
     }
