@@ -59,7 +59,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <param name="customControllers"></param>
         protected UdpServerBase(int port, int pingInterval, IList<DatagramControllerBase> customControllers = null)
         {
-            Controllers = new Dictionary<byte, DatagramControllerBase> {{0, new DcPingPong(this)}};
+            Controllers = new Dictionary<byte, DatagramControllerBase> { { 0, new DcPingPong(this) } };
             if (customControllers != null)
                 foreach (DatagramControllerBase controller in customControllers)
                 {
@@ -76,12 +76,22 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
             _connectedClients = new Dictionary<IPEndPoint, ConnectionBase>();
         }
 
-        public int ClientCount
-        {
-            get
-            {
+        private int _ClientCount = 0;
+        private int _CountClientVersion = 0;
+        private IReadOnlyCollection<ConnectionBase> Clients = null;
+
+        public int ClientCount {
+            get {
+
+                if (_CountClientVersion == ClientVersion())
+                    return _ClientCount;
+
                 lock (_connectedClients)
-                    return _connectedClients.Count;
+                {
+                    _ClientCount = _connectedClients.Count;
+                    ClientVersionIncrement();
+                }
+                return _ClientCount;
             }
         }
 
@@ -90,12 +100,16 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <summary>
         ///     Retrieves a list of all the connected clients.
         /// </summary>
-        public IReadOnlyCollection<ConnectionBase> ConnectedClients
-        {
-            get
-            {
+        public IReadOnlyCollection<ConnectionBase> ConnectedClients {
+            get {
+                if (_CountClientVersion == ClientVersion() && Clients != null)
+                    return Clients;
+
                 lock (_connectedClients)
-                    return new ReadOnlyCollection<ConnectionBase>(_connectedClients.Values.ToList());
+                {
+                    Clients = new ReadOnlyCollection<ConnectionBase>(_connectedClients.Values.ToList());
+                }
+                return Clients;
             }
         }
 
@@ -138,7 +152,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         {
             lock (_connectedClients)
                 return
-                    _connectedClients.Values.Any(clientConnectionBase => clientConnectionBase.Handle.Equals(handle, StringComparison.InvariantCultureIgnoreCase));
+                    ConnectedClients.Any(clientConnectionBase => clientConnectionBase.Handle.Equals(handle, StringComparison.InvariantCultureIgnoreCase));
         }
 
         /// <summary>
@@ -156,6 +170,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
                 {
                     LogMessage(string.Format(Resources.Message_ClientRemoved, client));
                     _connectedClients.Remove(client.EndPoint);
+                    ClientVersionIncrement();
                 }
             OnAfterRemoveClient(client);
         }
@@ -217,7 +232,11 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
                     lock (_connectedClients)
                     {
                         if (!_connectedClients.ContainsKey(received.Sender))
+                        {
+
                             AddClient(CreateNewConnection(received.Sender, this));
+                            
+                        }
                     }
 
                     //Process new packet.
@@ -249,6 +268,21 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// </summary>
         private readonly Dictionary<IPEndPoint, ConnectionBase> _connectedClients;
 
+        private volatile int _connectedClientsVersion = 0;
+
+        public void ClientVersionIncrement()
+        {
+            if (_connectedClientsVersion + 1 == int.MaxValue)
+                _connectedClientsVersion = 0;
+            _connectedClientsVersion++;
+        }
+
+        public int ClientVersion()
+        {
+            return _connectedClientsVersion;
+        }
+
+
         /// <summary>
         ///     The millesecond interval delay between sending pings to the client
         /// </summary>
@@ -267,7 +301,9 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <summary>
         ///     Used to store all the Datagram Packet Controllers
         /// </summary>
-        private Dictionary<byte, DatagramControllerBase> Controllers { get; }
+        private Dictionary<byte, DatagramControllerBase> Controllers {
+            get;
+        }
 
         #endregion
 
@@ -312,6 +348,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
                 {
                     LogMessage(string.Format(Resources.Message_AddingEndpoint, client.EndPoint));
                     _connectedClients.Add(client.EndPoint, client);
+                    ClientVersionIncrement();
                 }
         }
 

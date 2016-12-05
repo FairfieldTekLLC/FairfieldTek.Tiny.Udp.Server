@@ -1,0 +1,13 @@
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\Server.4.6.1.exe.config
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\Server.4.6.1.exe
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\Server.4.6.1.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\FairfieldTekLLC.Tiny.Udp.Server.Common.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\FairfieldTekLLC.Tiny.Udp.Server.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\Microsoft.QualityTools.Testing.Fakes.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\FairfieldTekLLC.Tiny.Udp.Server.Common.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\bin\Release\FairfieldTekLLC.Tiny.Udp.Server.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\obj\Release\FairfieldTekLLC.Tiny.Udp.Example.Server.csprojResolveAssemblyReference.cache
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\obj\Release\FairfieldTekLLC.Tiny.Udp.Example.Server.Properties.Resources.resources
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\obj\Release\FairfieldTekLLC.Tiny.Udp.Example.Server.csproj.GenerateResource.Cache
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\obj\Release\Server.4.6.1.exe
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Examples\FairfieldTekLLC.Tiny.Udp.Example.Server\obj\Release\Server.4.6.1.pdb

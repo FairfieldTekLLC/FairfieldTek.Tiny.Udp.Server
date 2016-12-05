@@ -61,7 +61,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Client.Mono.UDP
                         TrySetHandle();
                     else
                     {
-                        Console.WriteLine($"Handle is set to {auth.Handle}");
+                        Console.WriteLine($@"Handle is set to {auth.Handle}");
                         _myHandle.Set(auth.Handle);
                     }
                     _handleResponded = true;
@@ -114,7 +114,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Client.Mono.UDP
                 }
                 catch (Exception er)
                 {
-                    Console.WriteLine("Exception " + er);
+                    Console.WriteLine(@"Exception " + er);
                     
                 }
                 
