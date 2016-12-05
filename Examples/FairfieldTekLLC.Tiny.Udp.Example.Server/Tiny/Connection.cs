@@ -42,44 +42,14 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Server.Tiny
 
         public Connection(IPEndPoint endpoint, UdpServerBase parent) : base(endpoint, parent)
         {
-            //Location = new Point3F();
-            Zone = 0;
-            LookingForGroup = false;
-            IsGm = false;
-            //mGroup = 0;
-            //mGuild = 0;
-            IsRolePlay = false;
+       
             Friends = new List<string>();
             Ignore = new List<string>();
         }
 
         public bool IsAuthorized { get; set; }
 
-        public ConnectionType ConnectionType { get; set; }
-
-        public long PlayerCharacterId { get; set; }
-
-        public Gender Gender { get; set; }
-
-        //public string mPassPhrase
-        //    {
-        //    get { return _mPassPhrase; }
-        //    set { _mPassPhrase = value; }
-        //    }
-
         public List<string> Friends { get; set; }
-
-        //public Point3F Location { get; set; }
-
-        public short Zone { get; set; }
-
-        public bool LookingForGroup { get; set; }
-
-        public bool IsGm { get; set; }
-
-        //public ushort mGroup { get; set; }
-
-        //public uint mGuild { get; set; }
 
         public List<string> Ignore { get; set; }
 

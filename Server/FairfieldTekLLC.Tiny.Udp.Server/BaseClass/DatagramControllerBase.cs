@@ -70,22 +70,34 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <summary>
         ///     When no packets are found in the queue, this is the time it will pause the thread.
         /// </summary>
-        public int CheckDelayMs { get; }
+        public int CheckDelayMs {
+            get;
+        }
 
         /// <summary>
         ///     The packet Type Id, always first byte in stream.
         /// </summary>
-        public byte PacketHandlerTypeId { get; }
+        public byte PacketHandlerTypeId {
+            get;
+        }
 
         /// <summary>
         ///     Friendly name of handler
         /// </summary>
-        public string PacketHandlerTypeName { get; }
+        public string PacketHandlerTypeName {
+            get;
+        }
 
         /// <summary>
         ///     Reference to the server hosting the UDP server.
         /// </summary>
-        public UdpServerBase Server { get; }
+        public UdpServerBase Server {
+            get;
+        }
+
+
+
+        private KeyValuePair<ConnectionBase, IList<byte>> _data;
 
         /// <summary>
         ///     Background worker function
@@ -94,13 +106,13 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.BaseClass
         /// <param name="e"></param>
         private void _worker_DoWork(object sender, DoWorkEventArgs e)
         {
+
             while (Server.Run)
             {
-                KeyValuePair<ConnectionBase, IList<byte>> data;
-                if (_queue.TryDequeue(out data))
+                if (_queue.TryDequeue(out _data))
                 {
-                    _processor.SetData(data.Value);
-                    OnProcessNewData(data.Key, _processor);
+                    _processor.SetData(_data.Value);
+                    OnProcessNewData(_data.Key, _processor);
                     _processor.Clear();
                 }
                 else

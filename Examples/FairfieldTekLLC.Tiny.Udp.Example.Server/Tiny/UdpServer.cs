@@ -53,26 +53,6 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Server.Tiny
         }
 
         /// <summary>
-        ///     Fetches the Guild Name
-        /// </summary>
-        /// <param name="guildid"></param>
-        /// <returns></returns>
-        public string FetchGuildName(uint guildid)
-        {
-            return "";
-        }
-
-        /// <summary>
-        ///     Fetches the zone name
-        /// </summary>
-        /// <param name="zoneid"></param>
-        /// <returns></returns>
-        public string FetchZoneName(short zoneid)
-        {
-            return "";
-        }
-
-        /// <summary>
         ///     Logs a message to the console
         /// </summary>
         /// <param name="msg"></param>
