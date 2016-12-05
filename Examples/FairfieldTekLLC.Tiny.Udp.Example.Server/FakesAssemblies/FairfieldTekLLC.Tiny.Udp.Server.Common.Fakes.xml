@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FairfieldTekLLC.Tiny.Udp.Server.Common.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase">
+            <summary>Shim type of FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.DatagramBase</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.#ctor(FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.DatagramBase)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.AllInstances.Pack">
+            <summary>Sets the shim of DatagramBase.Pack()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.AllInstances.PacketTypeIdGet">
+            <summary>Sets the shim of DatagramBase.get_PacketTypeId()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.AllInstances.PacketTypeIdSetByte">
+            <summary>Sets the shim of DatagramBase.set_PacketTypeId(Byte value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.AllInstances.UnpackStreamProcessor">
+            <summary>Sets the shim of DatagramBase.Unpack(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.ConstructorByte">
+            <summary>Sets the shim of DatagramBase.DatagramBase(Byte packetTypeId)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.Pack">
+            <summary>Sets the shim of DatagramBase.Pack()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.PacketTypeIdGet">
+            <summary>Sets the shim of DatagramBase.get_PacketTypeId()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.PacketTypeIdSetByte">
+            <summary>Sets the shim of DatagramBase.set_PacketTypeId(Byte value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.ShimDatagramBase.UnpackStreamProcessor">
+            <summary>Sets the shim of DatagramBase.Unpack(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase">
+            <summary>Stub type of FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.DatagramBase</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.#ctor(System.Byte)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.InitializeStub">
+            <summary>Initializes a new instance of type StubDatagramBase</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.OnPacked(FairfieldTekLLC.Tiny.Udp.Server.Common.Common.StreamProcessor)">
+            <summary>Sets the stub of DatagramBase.OnPacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.OnPackedStreamProcessor">
+            <summary>Sets the stub of DatagramBase.OnPacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.OnUnpacked(FairfieldTekLLC.Tiny.Udp.Server.Common.Common.StreamProcessor)">
+            <summary>Sets the stub of DatagramBase.OnUnpacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass.Fakes.StubDatagramBase.OnUnpackedStreamProcessor">
+            <summary>Sets the stub of DatagramBase.OnUnpacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect">
+            <summary>Shim type of FairfieldTekLLC.Tiny.Udp.Server.Common.Client.UdpConnect</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.#ctor(FairfieldTekLLC.Tiny.Udp.Server.Common.Client.UdpConnect)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.BwListener_DoWorkObjectDoWorkEventArgs">
+            <summary>Sets the shim of UdpConnect.BwListener_DoWork(Object sender, DoWorkEventArgs e)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.Connect">
+            <summary>Sets the shim of UdpConnect.Connect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.ConnectStringInt32">
+            <summary>Sets the shim of UdpConnect.Connect(String address, Int32 port)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.Disconnect">
+            <summary>Sets the shim of UdpConnect.Disconnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.IsConnectedGet">
+            <summary>Sets the shim of UdpConnect.get_IsConnected()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.OnConnect">
+            <summary>Sets the shim of UdpConnect.OnConnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.OnDisconnect">
+            <summary>Sets the shim of UdpConnect.OnDisconnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances.SendDatagramBase">
+            <summary>Sets the shim of UdpConnect.Send(DatagramBase datagram)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.AllInstances._OnConnect">
+            <summary>Sets the shim of UdpConnect._OnConnect()</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.BwListener_DoWorkObjectDoWorkEventArgs">
+            <summary>Sets the shim of UdpConnect.BwListener_DoWork(Object sender, DoWorkEventArgs e)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.Connect">
+            <summary>Sets the shim of UdpConnect.Connect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.ConnectStringInt32">
+            <summary>Sets the shim of UdpConnect.Connect(String address, Int32 port)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.Constructor">
+            <summary>Sets the shim of UdpConnect.UdpConnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.ConstructorStringInt32">
+            <summary>Sets the shim of UdpConnect.UdpConnect(String host, Int32 port)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.Disconnect">
+            <summary>Sets the shim of UdpConnect.Disconnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.IsConnectedGet">
+            <summary>Sets the shim of UdpConnect.get_IsConnected()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.OnConnect">
+            <summary>Sets the shim of UdpConnect.OnConnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.OnDisconnect">
+            <summary>Sets the shim of UdpConnect.OnDisconnect()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect.SendDatagramBase">
+            <summary>Sets the shim of UdpConnect.Send(DatagramBase datagram)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.ShimUdpConnect._OnConnect">
+            <summary>Sets the shim of UdpConnect._OnConnect()</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect">
+            <summary>Stub type of FairfieldTekLLC.Tiny.Udp.Server.Common.Client.UdpConnect</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.#ctor(System.String,System.Int32)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.InitializeStub">
+            <summary>Initializes a new instance of type StubUdpConnect</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.NewData(System.Collections.Generic.IList{System.Byte})">
+            <summary>Sets the stub of UdpConnect.NewData(IList`1&lt;Byte&gt; data)</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.NewDataIListOfByte">
+            <summary>Sets the stub of UdpConnect.NewData(IList`1&lt;Byte&gt; data)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.OnConnect">
+            <summary>Sets the stub of UdpConnect.OnConnect()</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.OnConnect01">
+            <summary>Sets the stub of UdpConnect.OnConnect()</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.OnDisconnect">
+            <summary>Sets the stub of UdpConnect.OnDisconnect()</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.Client.Fakes.StubUdpConnect.OnDisconnect01">
+            <summary>Sets the stub of UdpConnect.OnDisconnect()</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor">
+            <summary>Shim type of FairfieldTekLLC.Tiny.Udp.Server.Common.Common.StreamProcessor</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.#ctor(FairfieldTekLLC.Tiny.Udp.Server.Common.Common.StreamProcessor)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.Clear">
+            <summary>Sets the shim of StreamProcessor.Clear()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.DataGet">
+            <summary>Sets the shim of StreamProcessor.get_Data()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.LengthGet">
+            <summary>Sets the shim of StreamProcessor.get_Length()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.PositionGet">
+            <summary>Sets the shim of StreamProcessor.get_Position()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.PositionSetInt32">
+            <summary>Sets the shim of StreamProcessor.set_Position(Int32 value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadBool">
+            <summary>Sets the shim of StreamProcessor.ReadBool()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadI32">
+            <summary>Sets the shim of StreamProcessor.ReadI32()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadS16">
+            <summary>Sets the shim of StreamProcessor.ReadS16()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadS8">
+            <summary>Sets the shim of StreamProcessor.ReadS8()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadString">
+            <summary>Sets the shim of StreamProcessor.ReadString()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadU16">
+            <summary>Sets the shim of StreamProcessor.ReadU16()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadU32">
+            <summary>Sets the shim of StreamProcessor.ReadU32()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.ReadU8">
+            <summary>Sets the shim of StreamProcessor.ReadU8()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.SetDataIListOfByte">
+            <summary>Sets the shim of StreamProcessor.SetData(IList`1&lt;Byte&gt; data)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesBoolean">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Boolean flag)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesByte">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Byte u8)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesInt16">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Int16 s16)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesInt32">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Int32 i32)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesSByte">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(SByte s8)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesString">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(String message)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesUInt16">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(UInt16 u16)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.AllInstances.WriteBytesUInt32">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(UInt32 u32)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.Clear">
+            <summary>Sets the shim of StreamProcessor.Clear()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.Constructor">
+            <summary>Sets the shim of StreamProcessor.StreamProcessor()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ConstructorIListOfByte">
+            <summary>Sets the shim of StreamProcessor.StreamProcessor(IList`1&lt;Byte&gt; data)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.DataGet">
+            <summary>Sets the shim of StreamProcessor.get_Data()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.LengthGet">
+            <summary>Sets the shim of StreamProcessor.get_Length()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.PositionGet">
+            <summary>Sets the shim of StreamProcessor.get_Position()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.PositionSetInt32">
+            <summary>Sets the shim of StreamProcessor.set_Position(Int32 value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadBool">
+            <summary>Sets the shim of StreamProcessor.ReadBool()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadI32">
+            <summary>Sets the shim of StreamProcessor.ReadI32()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadS16">
+            <summary>Sets the shim of StreamProcessor.ReadS16()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadS8">
+            <summary>Sets the shim of StreamProcessor.ReadS8()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadString">
+            <summary>Sets the shim of StreamProcessor.ReadString()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadU16">
+            <summary>Sets the shim of StreamProcessor.ReadU16()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadU32">
+            <summary>Sets the shim of StreamProcessor.ReadU32()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.ReadU8">
+            <summary>Sets the shim of StreamProcessor.ReadU8()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.SetDataIListOfByte">
+            <summary>Sets the shim of StreamProcessor.SetData(IList`1&lt;Byte&gt; data)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesBoolean">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Boolean flag)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesByte">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Byte u8)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesInt16">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Int16 s16)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesInt32">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(Int32 i32)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesSByte">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(SByte s8)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesString">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(String message)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesUInt16">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(UInt16 u16)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimStreamProcessor.WriteBytesUInt32">
+            <summary>Sets the shim of StreamProcessor.WriteBytes(UInt32 u32)</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1">
+            <summary>Shim type of FairfieldTekLLC.Tiny.Udp.Server.Common.Common.VolatileVar`1</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.#ctor(FairfieldTekLLC.Tiny.Udp.Server.Common.Common.VolatileVar{`0})">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.AllInstances.Get">
+            <summary>Sets the shim of VolatileVar`1.Get()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.AllInstances.SetT0">
+            <summary>Sets the shim of VolatileVar`1.Set(!0 value)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.Constructor">
+            <summary>Sets the shim of VolatileVar`1.VolatileVar`1()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.ConstructorT0">
+            <summary>Sets the shim of VolatileVar`1.VolatileVar`1(!0 value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.Get">
+            <summary>Sets the shim of VolatileVar`1.Get()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.ShimVolatileVar`1.SetT0">
+            <summary>Sets the shim of VolatileVar`1.Set(!0 value)</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1">
+            <summary>Stub type of FairfieldTekLLC.Tiny.Udp.Server.Common.Common.VolatileVar`1</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1.#ctor(`0)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1.InitializeStub">
+            <summary>Initializes a new instance of type StubVolatileVar</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Common.Fakes.StubVolatileVar`1.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong">
+            <summary>Shim type of FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.PingPong</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.#ctor(FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.PingPong)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.AllInstances.ChkValGet">
+            <summary>Sets the shim of PingPong.get_ChkVal()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.AllInstances.ChkValSetByte">
+            <summary>Sets the shim of PingPong.set_ChkVal(Byte value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.AllInstances.OnPackedStreamProcessor">
+            <summary>Sets the shim of PingPong.OnPacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.AllInstances.OnUnpackedStreamProcessor">
+            <summary>Sets the shim of PingPong.OnUnpacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.ChkValGet">
+            <summary>Sets the shim of PingPong.get_ChkVal()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.ChkValSetByte">
+            <summary>Sets the shim of PingPong.set_ChkVal(Byte value)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.Constructor">
+            <summary>Sets the shim of PingPong.PingPong()</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.OnPackedStreamProcessor">
+            <summary>Sets the shim of PingPong.OnPacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.ShimPingPong.OnUnpackedStreamProcessor">
+            <summary>Sets the shim of PingPong.OnUnpacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="T:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong">
+            <summary>Stub type of FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.PingPong</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.InitializeStub">
+            <summary>Initializes a new instance of type StubPingPong</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.OnPacked(FairfieldTekLLC.Tiny.Udp.Server.Common.Common.StreamProcessor)">
+            <summary>Sets the stub of PingPong.OnPacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.OnPackedStreamProcessor">
+            <summary>Sets the stub of PingPong.OnPacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="M:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.OnUnpacked(FairfieldTekLLC.Tiny.Udp.Server.Common.Common.StreamProcessor)">
+            <summary>Sets the stub of PingPong.OnUnpacked(StreamProcessor streamProcessor)</summary>
+        </member>
+        <member name="F:FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram.Fakes.StubPingPong.OnUnpackedStreamProcessor">
+            <summary>Sets the stub of PingPong.OnUnpacked(StreamProcessor streamProcessor)</summary>
+        </member>
+    </members>
+</doc>
