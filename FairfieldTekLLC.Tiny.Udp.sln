@@ -15,6 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairfieldTekLLC.Tiny.Udp.Se
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairfieldTekLLC.Tiny.Udp.Server.Common", "Server\FairfieldTekLLC.Tiny.Udp.Server.Common\FairfieldTekLLC.Tiny.Udp.Server.Common.csproj", "{08ACD983-E889-4173-990B-5551AA0554D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3F2B14BF-E170-4FA0-85B9-4EC8A13A35EB}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,27 +87,5 @@ Global
 		{1CB315FC-2C10-493C-9BFF-7AF43385411C} = {9264AA8A-3246-4516-A10F-14E1D003FE85}
 		{D2D287B7-FF6A-43D4-841C-6279B6B92B79} = {158166EF-CFC2-446E-9BCC-C22B1FA4C9D4}
 		{08ACD983-E889-4173-990B-5551AA0554D1} = {158166EF-CFC2-446E-9BCC-C22B1FA4C9D4}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://fairfieldtek.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Examples\\FairfieldTekLLC.Tiny.Udp.Example.Client.Mono\\FairfieldTekLLC.Tiny.Udp.Example.Client.Mono.csproj
-		SccProjectTopLevelParentUniqueName1 = FairfieldTekLLC.Tiny.Udp.sln
-		SccProjectName1 = Examples/FairfieldTekLLC.Tiny.Udp.Example.Client.Mono
-		SccLocalPath1 = Examples\\FairfieldTekLLC.Tiny.Udp.Example.Client.Mono
-		SccProjectUniqueName2 = Examples\\FairfieldTekLLC.Tiny.Udp.Example.Server\\FairfieldTekLLC.Tiny.Udp.Example.Server.csproj
-		SccProjectTopLevelParentUniqueName2 = FairfieldTekLLC.Tiny.Udp.sln
-		SccProjectName2 = Examples/FairfieldTekLLC.Tiny.Udp.Example.Server
-		SccLocalPath2 = Examples\\FairfieldTekLLC.Tiny.Udp.Example.Server
-		SccProjectUniqueName3 = Server\\FairfieldTekLLC.Tiny.Udp.Server\\FairfieldTekLLC.Tiny.Udp.Server.csproj
-		SccProjectTopLevelParentUniqueName3 = FairfieldTekLLC.Tiny.Udp.sln
-		SccProjectName3 = Server/FairfieldTekLLC.Tiny.Udp.Server
-		SccLocalPath3 = Server\\FairfieldTekLLC.Tiny.Udp.Server
-		SccProjectUniqueName4 = Server\\FairfieldTekLLC.Tiny.Udp.Server.Common\\FairfieldTekLLC.Tiny.Udp.Server.Common.csproj
-		SccProjectTopLevelParentUniqueName4 = FairfieldTekLLC.Tiny.Udp.sln
-		SccProjectName4 = Server/FairfieldTekLLC.Tiny.Udp.Server.Common
-		SccLocalPath4 = Server\\FairfieldTekLLC.Tiny.Udp.Server.Common
 	EndGlobalSection
 EndGlobal
