@@ -1,0 +1,4 @@
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\bin\Debug\FairfieldTekLLC.Tiny.Udp.Server.Common.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\bin\Debug\FairfieldTekLLC.Tiny.Udp.Server.Common.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.Common.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server.Common\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.Common.pdb

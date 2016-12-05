@@ -26,10 +26,12 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using FairfieldTekLLC.Tiny.Udp.Server.Common.BaseClass;
+using FairfieldTekLLC.Tiny.Udp.Server.Common.Common;
 using FairfieldTekLLC.Tiny.Udp.Server.Common.Datagram;
 
 namespace FairfieldTekLLC.Tiny.Udp.Server.Common.Client
@@ -54,26 +56,48 @@ namespace FairfieldTekLLC.Tiny.Udp.Server.Common.Client
 
         public bool IsConnected => _isConnected;
 
-        private void _OnConnect()
-        {
-            OnConnect();
-            Send(new PingPong());
-        }
+
 
         private void BwListener_DoWork(object sender, DoWorkEventArgs e)
         {
             _endPoint = new IPEndPoint(IPAddress.Any, _port);
             _client = new UdpClient(_endPoint);
-            _client.DontFragment = true;
+
             _client.Connect(_host, _port);
             Thread.Sleep(100);
+
+            bool setConnected = false;
+            
+            StreamProcessor sp = new StreamProcessor();
             _isConnected = true;
-            _OnConnect();
             while (_isConnected)
             {
                 try
                 {
-                    NewData(_client.Receive(ref _endPoint));
+                    if (!setConnected)
+                    {
+                        PingPong pingpong = new PingPong();
+                        Send(pingpong);
+                    }
+
+                    var data = _client.Receive(ref _endPoint);
+
+                    if (!setConnected)
+                    {
+                        setConnected = true;
+                        OnConnect();
+                    }
+
+                    if (data[0] == 0)
+                    {
+                        PingPong pingpong = new PingPong();
+                        sp.SetData(data);
+                        pingpong.Unpack(sp);
+                        Send(pingpong);
+                    }
+                    else
+                        NewData(data);
+
                 }
                 catch (Exception)
                 {

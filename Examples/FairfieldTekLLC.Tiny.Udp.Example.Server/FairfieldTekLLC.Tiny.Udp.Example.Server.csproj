@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FairfieldTekLLC.Tiny.Udp.Example.Server</RootNamespace>
     <AssemblyName>Server.4.6.1</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
     <SccLocalPath>SAK</SccLocalPath>
@@ -85,7 +85,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <Fakes Include="Fakes\FairfieldTekLLC.Tiny.Udp.Server.Common.fakes" />
     <None Include="Properties\App.config" />
   </ItemGroup>
   <ItemGroup>

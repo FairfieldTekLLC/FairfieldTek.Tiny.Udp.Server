@@ -38,7 +38,7 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Client.Mono.UDP
     {
         private volatile bool _handleResponded;
         private volatile int _loginAttemptNumber;
-        private readonly VolatileVar<string> _myHandle = new VolatileVar<string>(null);
+        private readonly VolatileVar<string> _myHandle = new VolatileVar<string>(string.Empty);
 
         public UdpClientTest(string host, int port) : base(host, port)
         {
@@ -97,18 +97,27 @@ namespace FairfieldTekLLC.Tiny.Udp.Example.Client.Mono.UDP
         {
             while (IsConnected)
             {
-                if (_myHandle.Get() == string.Empty && !_handleResponded)
+                try
                 {
-                    _handleResponded = false;
-                    TrySetHandle();
-                    Thread.Sleep(5000);
+                    if (_myHandle.Get() == string.Empty && !_handleResponded)
+                    {
+                        _handleResponded = false;
+                        TrySetHandle();
+                        Thread.Sleep(5000);
+                    }
+                    else
+                    {
+                        Say say = new Say { Message = $"The Current Time is {DateTime.Now:F} " };
+                        Send(say);
+                        Thread.Sleep(1000);
+                    }
                 }
-                else
+                catch (Exception er)
                 {
-                    Say say = new Say {Message = $"The Current Time is {DateTime.Now:F} "};
-                    Send(say);
-                    Thread.Sleep(1000);
+                    Console.WriteLine("Exception " + er);
+                    
                 }
+                
             }
         }
 

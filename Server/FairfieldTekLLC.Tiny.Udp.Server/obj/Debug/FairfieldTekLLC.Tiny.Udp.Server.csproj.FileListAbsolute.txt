@@ -1,0 +1,9 @@
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\bin\FairfieldTekLLC.Tiny.Udp.Server.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\bin\FairfieldTekLLC.Tiny.Udp.Server.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\bin\FairfieldTekLLC.Tiny.Udp.Server.Common.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\bin\FairfieldTekLLC.Tiny.Udp.Server.Common.pdb
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.csprojResolveAssemblyReference.cache
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.Properties.Resources.resources
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.csproj.GenerateResource.Cache
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.dll
+E:\SourceTree\FairfieldTek.Tiny.Udp.Server\Server\FairfieldTekLLC.Tiny.Udp.Server\obj\Debug\FairfieldTekLLC.Tiny.Udp.Server.pdb
